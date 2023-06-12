@@ -424,9 +424,9 @@ def do_prediction(data, planner, k=1, batch_size=32, debug=False):
 
 def infer():
     parser = argparse.ArgumentParser(description='routeplanning.py')
-    parser.add_argument('--workspace', type=str, default="/home/tianwei/Projects/ETA4RP/data/sfl_aug")
-    parser.add_argument('--test_file', type=str, default="/home/tianwei/dataset/split_dataset/sanfran_large/traj_test")
-    parser.add_argument('--model_path', type=str, default="/home/tianwei/Projects/ETA4RP/data/sfl_aug/model_keyseg_smlkp2_m100_bce10_od130_kfeat4")
+    parser.add_argument('--workspace', type=str, default="data/sfl_100")
+    parser.add_argument('--test_file', type=str, default="sanfran_large/traj_test")
+    parser.add_argument('--model_path', type=str, default="sfl_100/model_keyseg")
     parser.add_argument('-gpu_id', type=str, default="0")
     parser.add_argument('-batch_size', type=int, default=2)
     parser.add_argument('-max_seq_len', type=int, default=300)

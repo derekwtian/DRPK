@@ -6,11 +6,11 @@ from argparse import ArgumentParser
 def make_args():
     parser = ArgumentParser()
 
-    parser.add_argument('--workspace', type=str, default="./data/porto_NMLR-5")
-    parser.add_argument('--train_file', type=str, default="/Users/tianwei/dataset/preprocessed_data/porto_data/preprocessed_train_trips_all.pkl")
-    parser.add_argument('--valid_file', type=str, default="/Users/tianwei/dataset/preprocessed_data/porto_data/preprocessed_validation_trips_all.pkl")
-    parser.add_argument('--test_file', type=str, default="/Users/tianwei/dataset/preprocessed_data/porto_data/preprocessed_test_trips_all.pkl")
-    parser.add_argument('--edges_shp', type=str, default="/Users/tianwei/Projects/fmm/example/data/Porto_NMLR/edges.shp")
+    parser.add_argument('--workspace', type=str, default="data/porto_large")
+    parser.add_argument('--train_file', type=str, default="porto_data/preprocessed_train_trips")
+    parser.add_argument('--valid_file', type=str, default="porto_data/preprocessed_validation_trips")
+    parser.add_argument('--test_file', type=str, default="porto_data/preprocessed_test_trips")
+    parser.add_argument('--edges_shp', type=str, default="data/Porto_Large/edges.shp")
     parser.add_argument("-threadnum", type=int, default=int(math.ceil(multiprocessing.cpu_count() * 0.6)))
     parser.add_argument('-left', type=int, default=5)
     parser.add_argument('-right', type=int, default=300)

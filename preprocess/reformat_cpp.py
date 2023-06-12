@@ -69,7 +69,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--workspace', type=str, default="data/ptl_100")
     parser.add_argument('-in_file', type=str, default="traj_valid")
-    parser.add_argument('--edges_shp', type=str, default="/Users/tianwei/dataset/preprocessed_data/chengdu_data/map/edges.shp")
+    parser.add_argument('--edges_shp', type=str, default="chengdu_data/map/edges.shp")
     parser.add_argument('-mode', type=int, default=2)
     args = parser.parse_args()
     print(args)

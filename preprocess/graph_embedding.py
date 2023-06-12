@@ -112,9 +112,9 @@ def gen_node2vec_emb(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--workspace', type=str, default="../data/chengdu_NMLR")
+    parser.add_argument('--workspace', type=str, default="data/chengdu_NMLR")
     parser.add_argument('--traj_file', type=str, default="traj_20161010")
-    parser.add_argument('--edges_shp', type=str, default="/Users/tianwei/dataset/preprocessed_data/chengdu_data/map/edges.shp")
+    parser.add_argument('--edges_shp', type=str, default="chengdu_data/map/edges.shp")
 
     parser.add_argument('-walk_len', type=int, default=30)
     parser.add_argument('-num_walks', type=int, default=25)

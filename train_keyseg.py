@@ -206,7 +206,7 @@ def train(model, train_loader, valid_loader, device, opt, hparams):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--workspace', type=str, default="data/sfl_100")
-    parser.add_argument('--output_dir', type=str, default="data/sfl_100/model_keyseg_smlkp2_m100_bce10_od130_kfeat4")
+    parser.add_argument('--output_dir', type=str, default="data/sfl_100/model_keyseg")
     parser.add_argument('-seed', type=int, default=42)
     parser.add_argument('-epochs', type=int, default=1000)
     parser.add_argument('-lr_base', type=float, default=1e-3)
