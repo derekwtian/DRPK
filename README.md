@@ -1,17 +1,18 @@
-# DRPK
-
-The source code of our implementation for DRPK.
+# DRPK: Effective and Efficient Route Planning Using Historical Trajectories on Road Networks (VLDB 2023)
 
 ## Environment and Package Dependencies
 The code can be successfully run under the following environments:
 - Python: 3.8
-- Pytorch version: 1.13 with CUDA 11
+- Pytorch version: 1.13 with CUDA 11.7
 - OS: Ubuntu 20.04
 
 The project will also need following package dependencies:
 - numpy
 - pandas
 - networkx
+- [microdict](https://github.com/touqir14/Microdict)
+- haversine
+- geopandas
 
 
 ## Format of the Data
@@ -70,7 +71,7 @@ codespace
     ├ models
     |   └ key_segs.py: KSD model
     └ preprocess
-        ├ csm.py: construct DA indicator
+        ├ dam.py: construct DA indicator
         ├ seg_info.py: construct Traffic popularity
         ├ graph_embedding.py: gengrate node2vec embeddings
         └ key_segs_labeling.py: label the key segments for trajectory data
@@ -92,3 +93,22 @@ workspace (e.g., /data)
 - Run infer function in `inference.py` for online RPQs inference.
 
 To get the details of the parameters when using DRP and DRPK, please refer to `args.py` and `conf.py`, respectively. Each field is described in detail in comments.
+
+## Citations
+If you use the code or data in this repository, citing our paper as the following will be really appropriate.
+```
+@article{tian2023drpk,
+  author       = {Wei Tian and
+                  Jieming Shi and
+                  Siqiang Luo and
+                  Hui Li and
+                  Xike Xie and
+                  Yuanhang Zou},
+  title        = {Effective and Efficient Route Planning Using Historical Trajectories on Road Networks},
+  journal      = {Proc. {VLDB} Endow.},
+  volume       = {16},
+  number       = {10},
+  pages        = {2512--2524},
+  year         = {2023}
+}
+```
