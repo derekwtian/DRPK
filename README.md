@@ -1,4 +1,4 @@
-# DRPK: Effective and Efficient Route Planning Using Historical Trajectories on Road Networks (VLDB 2023)
+# DRPK: [Effective and Efficient Route Planning Using Historical Trajectories on Road Networks](https://www.vldb.org/pvldb/vol16/p2512-tian.pdf) (VLDB 2023)
 
 ## Environment and Package Dependencies
 The code can be successfully run under the following environments:
